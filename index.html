@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="main">
+      <h1>Learn to code by watching others</h1>
+      <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+    but understanding how developers think is invaluable. 
+      </p>
+    </div>
+    <div id="sideBar">
+      <button id="freeTrial"><b>Try it free 7 days</b> then $20/mo. thereafter</button>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="first name"></label>
+          <input type="text" id="First name" placeholder="First Name">
+          <small>First name cannot be empty</small>
+        </div>
+        <div class="form-control">
+          <label for="last name"></label>
+          <input type="text" id="Last name" placeholder="Last Name">
+          <small>Last name cannot be empty</small>
+        </div>
+        <div class="form-control">
+          <label for="email adress"></label>
+          <input type="text" id="Email" placeholder="Email Address">
+          <small>Looks like this is not an email</small>
+        </div>
+        <div class="form-control">
+          <label for="password"></label>
+          <input type="password" id="Password" placeholder="Password">
+          <small>Password cannot be empty</small>
+        </div>
+        <button id="submit">Claim your free trial</button>
+        <div id="terms">By clicking the button, you are agreeing to our <a>Terms and Services</a></div>
+      </form>
+      <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Yaarit Stern</a>.
+    </p>
+  </footer>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

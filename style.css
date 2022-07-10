@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*Variables*/
+:root {
+    --pink: hsl(0, 100%, 74%);
+    --red: #e74c3c;
+    --green: rgb(56, 204, 140);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%); 
+    --gray: hsl(249, 8%, 49%);
+    --grayishBlue: hsl(246, 25%, 77%);
+    --errorIcon: url(./images/icon-error.svg);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--pink);
+    background-image: url(.//images/bg-intro-desktop.png);
+}
+
+.container {
+    margin: 100px 120px;  
+    font-family: 'Poppins';
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#main {
+    color: #fff;
+    width: 520px;
+    height: 475px;
+    margin-top: 180px;
+}
+
+#main h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#main p {
+    font-size: 16px;
+}
+
+#sideBar {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px rgba(0, 0, 0, 0.3);
+    width: 520px;
+    height: 475px;
+    padding: 40px;
+    
+}
+
+button {
+    text-align: center;
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 20px 115px;
+    border-radius: 10px; 
+    cursor: pointer;
+}
+
+#freeTrial {
+    background-color: var(--blue);
+    box-shadow: 0 8px rgba(0, 0, 0, 0.3);
+    margin: 0 0 25px 0;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+.form-control input {
+    border: 0.5px solid var(--blue);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 20px 30px;
+    
+}
+
+.form-control input::placeholder {
+    color: var(--gray);
+    font-weight: 700;
+    font-family: 'Poppins';
+    visibility: visible;
+}
+
+.form-control.form-control.error input::placeholder {
+    visibility: hidden;
+}
+
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #000;
+}
+
+.form-control input:focus::placeholder {
+    color: var(--darkBlue);
+    font-weight: 600;
+}
+
+.form-control.error input {
+    border-color: var(--red);
+    background-image: var(--errorIcon);
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 400px;
+    z-index: 1;
+}
+
+.form-control.error small {
+    color: var(--red);
+    visibility: visible;
+    left: 290px;
+}
+
+.form-control small {
+    font-size: 10px;
+    position: absolute;
+    visibility: hidden;
+}
+
+
+#submit {
+    background-color: var(--green);
+    box-shadow: 0 5px rgb(30, 163, 105);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#terms {
+    font-size: 10px;
+    text-align: center;
+    color: var(--grayishBlue);
+}
+
+a {
+    color: var(--pink);
+    font-weight: 700;
+}
