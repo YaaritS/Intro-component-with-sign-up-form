@@ -5,15 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"  href="style.css">
+  <link rel="mobile stylesheet" href="mobileStyle.css">
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -28,22 +24,22 @@
       <form id="form" class="form">
         <div class="form-control">
           <label for="first name"></label>
-          <input type="text" id="First name" placeholder="First Name">
+          <input type="text" id="First name" placeholder="First Name" autocomplete="off">
           <small>First name cannot be empty</small>
         </div>
         <div class="form-control">
           <label for="last name"></label>
-          <input type="text" id="Last name" placeholder="Last Name">
+          <input type="text" id="Last name" placeholder="Last Name" autocomplete="off">
           <small>Last name cannot be empty</small>
         </div>
         <div class="form-control">
           <label for="email adress"></label>
-          <input type="text" id="Email" placeholder="Email Address">
+          <input type="text" id="Email" placeholder="Email Address" autocomplete="off">
           <small>Looks like this is not an email</small>
         </div>
         <div class="form-control">
           <label for="password"></label>
-          <input type="password" id="Password" placeholder="Password">
+          <input type="password" id="Password" placeholder="Password" autocomplete="off">
           <small>Password cannot be empty</small>
         </div>
         <button id="submit">Claim your free trial</button>
